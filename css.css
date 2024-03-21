@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Sarala:wght@400;700&display=swap');
+@import url('https://css.gg/css?=|facebook|instagram|twitter');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+/* Pre define Classes */
+
+.bFont {
+    font-family: "Sarala", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cursiveFont {
+    font-family: "Luxurious Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Now css Apply here */
+
+* {
+    margin-top: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+nav,
+.menu,
+ul,
+a {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.logo h2 {
+    font-size: 50px;
+}
+
+nav {
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu,
+.social {
+    margin-top: 21PX;
+}
+
+
+.welcome h2 {
+    font-size: 190px;
+    font-family: "Londrina Outline", sans-serif;
+    text-align: center;
+    margin-top: 155px;
+}
+
+.welcome p {
+    letter-spacing: 5px;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: -150px;
+}
+
+.menuBtn button {
+    font-size: 15px;
+    padding: 15px 55px;
+    width: 165px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 2px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.menuBtn button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 30px rgba(236, 236, 236, 0.807)
+}
+
+.menuBtn {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+
+
+
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bold-heading h2 {
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 10px;
+    margin: 120px 0;
+}
+
+.mainInfo {
+    text-align: center;
+
+}
+
+.mainInfo h3 {
+    font-size: 35px;
+}
+
+.mainInfo p {
+    margin-top: -30PX;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.mainInfo button {
+    color: rgb(255, 255, 255);
+    padding: 15px 35px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.mainInfo button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 30px rgba(236, 236, 236, 0.807)
+}
+
+.store h1 {
+    text-align: center;
+}
+
+.gaming {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 20px 0px;
+    justify-content: space-around;
+}
+
+/* Card */
+.card {
+    border: solid;
+    width: 290px;
+    height: 530px;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(161, 161, 161);
+    border: none;
+}
+
+.card .img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+
+}
+
+.card h3 {
+    margin-top: -35px;
+    text-align: start;
+    font-size: 25px;
+    color: black;
+}
+
+.card .price {
+    margin-top: -20px;
+    display: flex;
+    gap: 15px;
+}
+
+.card .price .mrp {
+    color: rgb(134, 134, 134);
+}
+
+.card .price .listprice {
+    color: rgb(0, 0, 0);
+}
+
+.discount img {
+    color: white;
+    background-color: white;
+}
+
+.discount {
+    color: black;
+}
+
+.rating {
+    display: flex;
+}
+
+.rating h5 {
+    color: black;
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn button {
+    color: rgb(255, 255, 255);
+    padding: 5px 30px;
+    border-radius: 8px;
+    background-color: black;
+    transition: 0.4s;
+    border: none;
+    box-shadow: 0px 0px 20px rgb(161, 161, 161);
+    cursor: pointer;
+
+}
+
+.btn button:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px rgb(161, 161, 161);
+    background-color: rgb(253, 253, 253);
+
+
+}
+
+@media screen and (max-width: 650px) {
+    nav .menu {
+        display: none;
+    }
+
+    .welcome h2 {
+        margin-top: 80px;
+    }
+
+    .mainImg img {
+        width: 300px;
+    }
+
+    .menuBtn {
+        gap: 20px;
+    }
+
+    .card {
+        width: 250px;
+        height: 430px;
+    }
+
+    .card .img img {
+        width: 120px;
+    }
+
+    .btn button {
+        padding: 1px 3px;
+        width: 130px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .social ul {
+        gap: 10px;
+    }
+
+    .menuBtn {
+        gap: 10px;
+    }
+
+    .menuBtn button {
+        padding: 5px 5px;
+    }
+
+    .welcome h2 {
+        font-size: 120px;
+    }
+
+    .welcome p {
+        margin-top: -100px;
+    }
+
+}

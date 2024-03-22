@@ -248,6 +248,22 @@ nav {
 
 }
 
+input {
+    color: white;
+}
+
+.input .box {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+
+}
+
+.input input:checked~.office {
+    display: contents;
+}
+
+
 @media screen and (max-width: 650px) {
     nav .menu {
         display: none;
